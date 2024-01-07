@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Example</title>
+    <!-- ARIA introduces roles that define the type of user interface element an HTML element represents. Roles help assistive technologies understand the purpose and behavior of specific elements.--->
+</head>
+<body>
+
+    <header>
+        <h1 aria-level="1" role="heading">Accessible Website</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#" role="link">Home</a></li>
+                <li><a href="#" role="link">About Us</a></li>
+                <li><a href="#" role="link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="Introduction">
+            <h2 aria-level="2" role="heading">Welcome to our Website</h2>
+            <p aria-describedby="intro-description">
+                This is a simple example demonstrating the use of ARIA roles and attributes.
+            </p>
+            <div id="intro-description" aria-hidden="true">
+                ARIA (Accessible Rich Internet Applications) helps improve web accessibility for users with disabilities.
+            </div>
+        </section>
+
+        <section aria-label="Interactive Element">
+            <h2 aria-level="2" role="heading">Click the Button</h2>
+            <button aria-label="Click me" role="button" onclick="alert('Button Clicked!')">Click me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
