@@ -1,0 +1,15 @@
+Module bundlers like webpackl are tools used in modern web development to manage and 
+bundle various modules and assets within a web application.
+
+They allow devs to organise and optimise code.
+
+Web packs enable the use of modular programming in javascript where code is organised into seperate modules.
+Each handling it's own specific functionality.
+
+They also manage dependencies between modules, ensuring that correct loading is maintained.
+
+The provide the option to plugins to extend functionality of module bundlers.
+
+They provide a development server.
+
+When you use React, Web pack is included as part of the build set up.
