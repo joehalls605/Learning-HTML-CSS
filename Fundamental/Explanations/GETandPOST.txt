@@ -1,0 +1,29 @@
+GET:
+
+Purpose: The GET method is used to request data from a specified resource.
+
+Data in URL: The data is appended to the URL in the form of parameters. For example, https://example.com/api/data?param1=value1&param2=value2.
+
+Visibility: Parameters are visible in the URL, so they can be bookmarked and are often logged in browser history. This makes it less secure for sensitive data.
+
+Caching: Responses can be cached by the browser, as the request is part of the URL. Subsequent identical GET requests may retrieve data from the cache.
+
+Idempotent: GET requests are considered idempotent, meaning that making the same request multiple times should have the same result. It should not have any side effects on the server.
+
+Examples: Retrieving information from a database, loading a web page, fetching an image, etc.
+
+POST:
+
+Purpose: The POST method is used to submit data to be processed to a specified resource.
+
+Data in Request Body: Data is sent in the request body rather than as part of the URL. This allows for larger amounts of data and a more secure transmission, as the data is not visible in the URL.
+
+Visibility: Data is not visible in the URL, providing a level of security. It is more suitable for sensitive information.
+
+Caching: POST requests are not cached by default, as they may have side effects on the server.
+
+Idempotent: POST requests are not idempotent, meaning that making the same request multiple times may have different results. It is often used for operations that modify data on the server.
+
+Examples: Submitting a form, uploading a file, creating a new resource on the server, etc.
+
+In summary, the choice between GET and POST depends on the nature of the operation. Use GET when you want to retrieve data, and use POST when you want to submit or modify data on the server. Each method has its own characteristics, and selecting the appropriate one depends on the requirements of the specific task.
