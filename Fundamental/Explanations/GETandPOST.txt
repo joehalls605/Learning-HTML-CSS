@@ -17,6 +17,7 @@ Response: Weather information for New York.
 
 
 POST:
+Need a server to use post
 
 Purpose: Used to send data to a specific place for processing.
 Data in Request Body: Data is sent within the request, not visible in the URL.
