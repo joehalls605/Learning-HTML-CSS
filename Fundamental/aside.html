@@ -1,0 +1,70 @@
+<!--
+The <aside> element in HTML is used to define content that is tangentially related to the content around it. It typically represents content that is not directly related to the main content of the document but provides additional context or supplementary information. The <aside> element is commonly used for sidebars, pull quotes, advertisements, or other content that complements the main content.
+
+    Sidebars, Advertisements, Related Content
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Article with Aside</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        article {
+            flex: 2;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sample Article Title</h1>
+</header>
+
+<main>
+    <article>
+        <h2>Main Content</h2>
+        <p>This is the main content of the article. It provides valuable information on a specific topic.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio eu dolor congue imperdiet non id justo.</p>
+    </article>
+    
+    <aside>
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#">Related Article 1</a></li>
+            <li><a href="#">Related Article 2</a></li>
+            <li><a href="#">Related Article 3</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sample Website. All rights reserved.</p>
+</footer>
+
+</body>
