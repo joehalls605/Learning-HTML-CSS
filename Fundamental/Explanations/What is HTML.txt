@@ -1,0 +1,8 @@
+HTML defines the content and structure of a website.
+
+HyperText Markup Language
+
+HyperText - it means that pieces of text that link to other documents in the website. (Hyperlinks)
+
+Markup Language - A system for annotating a document in a way that is syntactically different from the text.
+The annotations describe the document's structure.

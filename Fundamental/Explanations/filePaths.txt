@@ -1,0 +1,15 @@
+Absolute Path:
+An absolute path provides the complete route to a file or directory from the system root.
+It's always from the route directory, / on unix, C:\ on windows.
+
+Relative Path:
+A relative path is based on your current working directory
+It specifies the path relative to your current location.
+
+You don't need to provide the absolute path, but instead describe how to get from your current location to the target.
+
+For example if you're in /home/tux, a relative path might be ../documents/report.txt. 
+This means go up one level, then into documents and find report.txt.
+
+Single dot . - represents the current directory.
+Double dot .. - represents the parent directory
