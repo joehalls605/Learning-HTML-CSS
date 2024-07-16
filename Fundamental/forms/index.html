@@ -15,50 +15,27 @@ POST: This method is used to submit data to be processed to a specified resource
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form</title>
-    </head>
-    <body>
-        <form action="results.html" method="GET"> <!--action is where the form submits to-->
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="username" required>
-            </div>
-            <div>
-                <div>
-                    <label for="email">Name</label>
-                    <input type="email" id="email" name="email"  required>
-                </div>
-                <div>
-                <div>
-                    <label for="age">Age</label>
-                    <input type="number" name="age" id="age" min="1" max="150" step="5">
-                </div>
-                <div>
-                    <label for="date">Age</label>
-                    <input type="date" name="date" id="date">
-                </div>
-                <div>
-                   <label for="banana">banana</label>
-                   <input type="checkbox" name="banana" id="banana">
-                </div>
-                <div>
-                    Gender
-                    <div>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" id="female" value="female">
-                    </div>
-                </div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-      </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="/send-message" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+<!--action: This attribute is used in the <form> element. It specifies the URL where the form data should be sent when the user submits the form. For example:-->
+    <form action="/submit_form.php" method="post"> 
+<!--: Also used in the <form> element, this attribute defines the HTTP method to be used when submitting the form. -->
+        <label for="username">Username:</label>
+ <!--the name attribute assigns a unique name to the form control. -->  
+ <!--The value attribute sets the initial value for an input field -->     
+        <input type="text" id="username" name="username" placeholder="Enter your username" value="JohnDoe">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
