@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
+
+<!-- colspan: Specifies the number of columns a cell should span.
+rowspan: Specifies the number of rows a cell should span.
+scope: Defines the scope of a header cell for accessibility, helping screen readers interpret the table correctly.-->
 <body>
 
     <h2>Employee Information</h2>
@@ -12,9 +30,9 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Department</th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Department</th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +52,28 @@
                 <td>Engineering</td>
             </tr>
         </tbody>
+    </table>
+
+    <!--Table using colspan-->
+    <table border="1">
+        <tr>
+            <th colspan="2">Header spanning 2 columns</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+
+    <!--Table using rowspan-->
+    <table border="1">
+        <tr>
+            <th rowspan="2">Header spanning 2 rows</th>
+            <td>Cell 1</td>
+        </tr>
+        <tr>
+            <td>Cell 2</td>
+        </tr>
     </table>
 
 </body>
