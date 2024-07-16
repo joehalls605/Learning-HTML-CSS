@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Elements Example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Multimedia Elements Example</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Audio Example</h2>
+            <audio controls>
+                <source src="audio-file.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video Example</h2>
+            <video width="320" height="240" controls>
+                <source src="video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Canvas Example</h2>
+            <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+        </section>
+    </main>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        // Draw a rectangle
+        context.fillStyle = 'blue';
+        context.fillRect(50, 50, 100, 100);
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Multimedia Elements Example. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+Multimedia elements allow you to include various types of media in your web pages, such as audio, video, and graphics. These elements enhance the user experience by providing rich content.
+
+The <audio> element is used to embed sound content in your web page. It supports different audio formats like MP3, WAV, and Ogg.
+
+Attributes:
+
+src: Specifies the path to the audio file.
+controls: Adds play, pause, and volume controls.
+autoplay: Automatically starts playing the audio when the page loads.
+loop: Replays the audio automatically when it ends.
+
+The <video> element is used to embed video content. It supports different video formats like MP4, WebM, and Ogg.
+
+Attributes:
+src: Specifies the path to the video file.
+controls: Adds play, pause, volume, and fullscreen controls.
+autoplay: Automatically starts playing the video when the page loads.
+loop: Replays the video automatically when it ends.
+width and height: Specifies the dimensions of the video player.
+
+The <canvas> element is used to draw graphics, such as charts, graphs, animations, and more, using JavaScript.
+
+Attributes:
+
+width and height: Specifies the dimensions of the canvas.
+
+JavaScript Methods: The <canvas> element itself does not have any content; you use JavaScript to draw graphics on it using methods like getContext('2d').
