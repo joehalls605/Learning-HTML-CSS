@@ -1,0 +1,31 @@
+Responsive design ensures that a website looks good and works well on different devices, from desktops to tablets to smartphones. The main goal is to provide an optimal viewing experience across a wide range of devices.
+
+Techniques
+
+Media Queries - are a CSS technique that allows you to apply different styles based on the characteristics of the user's device, such as screen width, height, orientation, and resolution.
+You define breakpoints (specific screen sizes) at which the layout of your site will change to better fit the screen.
+
+/* For devices with a screen width of 600px or less */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+Flexible Layouts - use relative units like percentages instead of fixed units like pixels to define the width of elements. This allows the elements to resize relative to the parent container, adapting to different screen sizes.
+By setting widths in percentages, elements can adjust their size dynamically.
+
+.container {
+    width: 80%; /* 80% of the parent container */
+}
+
+Fluid Grids - use a combination of flexible layouts and a grid system to create a layout that adjusts seamlessly to different screen sizes.
+The layout is divided into a grid of columns, and each element within the grid is given a proportionate width.
+
+To create a responsive website, you combine these techniques:
+
+Use media queries to apply different styles at different breakpoints.
+Design your layout using flexible units so that elements resize smoothly.
+Implement a fluid grid system to ensure your layout scales proportionally.
+
+
