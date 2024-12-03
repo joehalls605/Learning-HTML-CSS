@@ -1,0 +1,15 @@
+Block Elements: Elements such as <div>, <p>, <h1> to <h6>, <header>, <footer>, <section>, etc., are block-level elements by default. These elements will:
+
+Start on a new line.
+Stretch to fill the entire width of their parent container (if not restricted by width properties).
+Have margins, padding, and border.
+Inline Elements: Elements such as <span>, <a>, <strong>, <em>, <img>, etc., are inline elements by default. These elements will:
+
+Not start on a new line.
+Only take up as much width as necessary.
+Not respect width or height properties, but will respect horizontal margins and padding.
+Inline-block Elements: Elements with an intrinsic display of inline-block are rare but can be set manually. These elements:
+
+Do not start on a new line.
+Respect width and height properties.
+Allow for setting margins and padding without causing line breaks.
