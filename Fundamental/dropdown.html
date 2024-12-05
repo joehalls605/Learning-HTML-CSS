@@ -1,0 +1,18 @@
+<label for="dropdown">Choose an option</label>
+<select id="dropdown" name="options">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 2</option>
+</select>
+
+<script>
+ const dropdown = document.getElementById("dropdown");
+ dropdown.addEventListener("change", function(){
+    
+    // Get the selected value
+    const selectedValue = this.value;
+
+    // Perform an action with selected value
+    console.log("You selected", selectedValue);
+ });
+</script>
