@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    /* Flex container */
+    .container {
+      display: flex;
+      justify-content: space-between; /* Space items evenly */
+      align-items: center; /* Align items vertically in the center */
+      height: 300px;
+      background-color: #ccc;
+      padding: 20px;
+    }
+
+    /* Flex item */
+    .box {
+      width: 80px;
+      height: 80px;
+      background-color: lightcoral;
+      color: white;
+      display: flex;
+      justify-content: center; /* Center text horizontally inside the box */
+      align-items: center; /* Center text vertically inside the box */
+      font-weight: bold;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    /* Item with flex-grow (grows to fill available space) */
+    .box-grow {
+      background-color: lightseagreen;
+      flex-grow: 1; /* This box will grow to take up available space */
+    }
+
+    /* Aligning a specific item differently */
+    .box-align-self {
+      align-self: flex-start; /* Align this box to the start of the cross axis (top in this case) */
+    }
+
+    /* Box for demonstration of flex-shrink */
+    .box-shrink {
+      background-color: lightblue;
+      flex-shrink: 0; /* Prevent shrinking */
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">1</div>
+  <div class="box-grow">2 (grows)</div>
+  <div class="box">3</div>
+  <div class="box-align-self">4 (aligned to start)</div>
+  <div class="box-shrink">5 (no shrink)</div>
+</div>
+
+</body>
+</html>

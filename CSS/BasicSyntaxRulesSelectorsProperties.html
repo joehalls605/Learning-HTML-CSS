@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Syntax Basics</title>
+    <style>
+        /* CSS Rule: selector + declaration block */
+        /* This selector targets the entire page */
+        body {
+            margin: 0; /* Property: margin | Value: 0 */
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* This is a class selector (.container) */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full viewport height */
+            justify-content: space-between; /* Distributes space vertically */
+            background: #ffffff;
+        }
+
+        /* Another class selector for the top box */
+        .top-box {
+            width: 250px;
+            margin: 20px auto; /* Centers horizontally */
+            padding: 15px;
+            background-color: lightgreen;
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        /* Class selector for the bottom box */
+        .bottom-box {
+            width: 250px;
+            margin: auto auto 20px auto; /* Bottom margin keeps it pushed down */
+            padding: 15px;
+            background-color: lightcoral;
+            border: 2px solid red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top-box">This is a top box</div>
+    <div class="bottom-box">This is a bottom box</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin Auto Example</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .box {
+            width: 200px;
+            background: lightblue;
+            margin: 0 auto; /* center left/right */
+            padding: 10px;
+        }
+
+        .box2 {
+            width: 200px;
+            background: pink;
+            margin-top: auto; /* push to bottom */
+            margin-left: auto;
+            margin-right: auto; /* center left/right */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Centered top</div>
+    <div class="box2">Pushed to bottom</div>
+</div>
+</body>
+</html>

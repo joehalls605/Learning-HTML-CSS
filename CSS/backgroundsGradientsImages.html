@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backgrounds Example</title>
+    <style>
+        /*
+          Backgrounds (colours, images, gradients):
+          - Background colours: Set using 'background-color'.
+          - Background images: Set using 'background-image' with URLs or gradients.
+          - Gradients: Use 'linear-gradient' or 'radial-gradient' for smooth transitions between colors.
+        */
+
+        /* Global styles that apply to the body */
+        body {
+            background-color: #f4f4f9; /* Sets a light gray background color for the whole page */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container with background colour */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Aligns children vertically */
+            height: 100vh;
+        }
+
+        /* Heading with background image */
+        h1 {
+            font-size: 3em;
+            color: white;
+            background-image: url('https://via.placeholder.com/600'); /* Sets a background image for the heading */
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image within the heading */
+            padding: 50px;
+            text-align: center;
+            width: 100%; /* Ensures the h1 stretches across the full width */
+            box-sizing: border-box; /* Ensures padding is included in width calculation */
+        }
+
+        /* Box with linear gradient background */
+        .box {
+            width: 250px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+            color: white;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Box with radial gradient background */
+        .radial-box {
+            width: 250px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            background: radial-gradient(circle, #ff6347, #6fff1c); /* Radial gradient from tomato red to orange */
+            color: white;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .box2{
+            width: 250px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7e5f, #00c9a8); /* Gradient from pink to orange */
+            color: white;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Backgrounds Example</h1>
+    <div class="box">Linear Gradient Background</div>
+    <div class="radial-box">Radial Gradient Background</div>
+    <div class="box2">Linear Gradient Background</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Styling Example</title>
+  <style>
+    /*
+      Font sizes using 'em':
+      - 'em' is a relative unit based on the parent element's font size.
+      - 1em is equal to the current font size of the element's parent.
+      - If an element's font size is set to 2em, it will be 2 times the size of the parent element's font size.
+    */
+
+    /* Global styles that apply to the body and all elements */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Class selector - applied to the container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Element selector - general styling for h1 */
+    h1 {
+      color: darkred;
+      font-size: 3em; /* Sets font size to 3 times the normal size */
+      text-align: center; /* Centers the text */
+    }
+
+    /* ID selector - applied to the h1, overrides the previous color */
+    #heading {
+      color: darkblue; /* Overrides the h1 color */
+      text-align: left; /* Aligns text to the left */
+    }
+
+    /* Class selector - applied to the .box */
+    .box {
+      width: 250px;
+      height: 200px;
+      margin: 15px;
+      padding: 20px;
+      background-color: lightgreen;
+      text-align: center; /* Centers text inside the box */
+      font-size: 1.2em; /* Slightly larger text inside the box */
+    }
+
+    /* More specific rule for .box inside .container */
+    .container .box {
+      background-color: lightcoral; /* Overrides the previous box color */
+      color: white; /* Text inside the box will be white */
+      font-weight: bold; /* Makes the text bold */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 id="heading">Text Styling Example</h1> <!-- Text inherits font from body -->
+  <div class="box">This box has a more specific background color</div> <!-- Box inside container has more specific styles -->
+</div>
+</body>
+</html>

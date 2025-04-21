@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box-Sizing: content-box vs border-box</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #333;
+      margin-bottom: 20px;
+      background: lightgray;
+      color: #333;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .wrapper {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .box-info {
+      flex: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="box-info">
+    <div class="label">content-box (default)</div>
+    <div class="box content-box">This box ends up bigger than 200px wide</div>
+  </div>
+
+  <div class="box-info">
+    <div class="label">border-box</div>
+    <div class="box border-box">This box stays exactly 200px wide</div>
+  </div>
+</div>
+
+</body>
+</html>

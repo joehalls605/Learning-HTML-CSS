@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borders and Outlines Example</title>
+    <style>
+        /*
+          Borders and Outlines:
+          - Borders: Use 'border' property to define borders around elements (can set color, style, and width).
+          - Outlines: Use 'outline' property to create an outline around an element (similar to a border but doesn't affect layout).
+          - Borders are part of the box model and take up space, while outlines do not.
+        */
+
+        /* Global styles that apply to the body */
+        body {
+            background-color: #f4f4f9; /* Light background color */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Aligns children vertically */
+            height: 100vh;
+        }
+
+        /* Box with border */
+        .border-box {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            border: 5px solid #3498db; /* Solid blue border */
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Box with dashed border */
+        .dashed-box {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            border: 5px dashed #e74c3c; /* Dashed red border */
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Box with dotted border */
+        .dotted-box {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            border: 5px dotted #2ecc71; /* Dotted green border */
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Box with outline */
+        .outline-box {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+            outline: 5px solid #9b59b6; /* Purple outline */
+        }
+
+        /* Box with thick outline */
+        .thick-outline-box {
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            font-size: 1.2em;
+            outline: 10px double #f39c12; /* Double yellow outline */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="border-box">Solid Border</div>
+    <div class="dashed-box">Dashed Border</div>
+    <div class="dotted-box">Dotted Border</div>
+    <div class="outline-box">Outline</div>
+    <div class="thick-outline-box">Thick Outline</div>
+</div>
+</body>
+</html>
