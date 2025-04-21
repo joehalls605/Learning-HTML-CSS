@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sets the width of page to match width of device screen, sets the zoom level of the page to 1.0, loads at normal size, not zoomed in or out-->
+    <title>WW2 Locations Flexbox</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:20px;
+            background-color: #f4f4f4;
+        }
+        /* Flex container */
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-around; /* Distributes the items with equal space between*/
+            align-items:center;
+            gap:20px;
+            height:400px;
+            padding:20px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+        /* Flex items (locations) */
+        .location{
+            width:150px;
+            height:150px;
+            background-color:lightcoral;
+            color:white;
+            display:flex;
+            justify-content:center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+        .grow{
+            flex-grow:1;
+            background-color: lightseagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>WW2 Locations</h1>
+        <div class="container">
+            <div class="location">Normandy</div>
+            <div class="location">Stalingrad</div>
+            <div class="location grow">Berlin</div>
+            <div class="location">Pearl Harbor</div>
+            <div class="location">London</div>
+            <div class="location">Moscow</div>
+            <div class="location">Hiroshima</div>
+            <div class="location">Dunkirk</div>
+        </div>
+</body>
+</html>

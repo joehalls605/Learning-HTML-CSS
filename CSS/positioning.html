@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Example</title>
+  <style>
+    /* Global body styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container that holds all the elements */
+    .container {
+      height: 1500px; /* Added height to make sure there's enough space for scrolling */
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    /* Styling for all divs */
+    div {
+      padding: 20px;
+      margin: 10px;
+      color: white;
+    }
+
+    /* Static Positioning: Default positioning */
+    .static {
+      position: static;
+      background-color: lightblue;
+    }
+
+    /* Relative Positioning: Positioned relative to its normal position */
+    .relative {
+      position: relative;
+      top: 20px;  /* Moves 20px down */
+      left: 30px; /* Moves 30px right */
+      background-color: lightgreen;
+    }
+
+    /* Absolute Positioning: Positioned relative to the nearest positioned ancestor */
+    .absolute {
+      position: absolute;
+      top: 50px;   /* Moves 50px down from the nearest positioned ancestor */
+      right: 20px; /* Moves 20px from the right */
+      background-color: lightgoldenrodyellow;
+    }
+
+    /* Fixed Positioning: Fixed to the viewport, will stay in place even on scroll */
+    .fixed {
+      position: fixed;
+      top: 10px;   /* 10px from the top of the viewport */
+      right: 10px; /* 10px from the right of the viewport */
+      background-color: lightseagreen;
+    }
+
+    /* Sticky Positioning: Sticks to the top of the viewport as you scroll */
+    .sticky {
+      position: sticky;
+      top: 0;      /* Sticks to the top of the page once you scroll */
+      background-color: lightsalmon;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Flex container holding all the positioned elements -->
+<div class="container">
+  <!-- Static element: Default position, will behave normally in the flow of the document -->
+  <div class="static">Static Positioning (Normal flow)</div>
+
+  <!-- Relative element: Positioned relative to its default position -->
+  <div class="relative">Relative Positioning (Offset from normal position)</div>
+
+  <!-- Absolute element: Positioned relative to the nearest positioned ancestor -->
+  <div class="absolute">Absolute Positioning (Positioned relative to nearest positioned ancestor)</div>
+
+  <!-- Fixed element: Positioned relative to the viewport, will stay fixed even when scrolling -->
+  <div class="fixed">Fixed Positioning (Fixed to the viewport)</div>
+
+  <!-- Sticky element: Sticks to the top of the screen as you scroll -->
+  <div class="sticky">Sticky Positioning (Sticks to top as you scroll)</div>
+</div>
+
+</body>
+</html>
