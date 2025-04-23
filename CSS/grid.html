@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        /* Container for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+            grid-gap: 20px; /* Adds space between grid items */
+            padding: 20px;
+        }
+
+        /* Individual grid items */
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+        }
+
+        /* Adding specific styles to each item */
+        .item1 {
+            background-color: red;
+        }
+
+        .item2 {
+            background-color: green;
+        }
+
+        .item3 {
+            background-color: yellow;
+        }
+
+        .item4 {
+            background-color: orange;
+        }
+
+        .item5 {
+            background-color: purple;
+        }
+
+        .item6 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item item1">Item 1</div>
+    <div class="grid-item item2">Item 2</div>
+    <div class="grid-item item3">Item 3</div>
+    <div class="grid-item item4">Item 4</div>
+    <div class="grid-item item5">Item 5</div>
+    <div class="grid-item item6">Item 6</div>
+</div>
+
+</body>
+</html>

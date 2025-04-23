@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index Example</title>
+  <style>
+    .box {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+
+    .box1 {
+      background-color: red;
+      z-index: 1; /* Will appear behind box2 */
+    }
+
+    .box2 {
+      background-color: blue;
+      z-index: 2; /* Will appear in front of box1 */
+    }
+
+    .box3 {
+      background-color: green;
+      z-index: 0; /* Will appear behind both box1 and box2 */
+    }
+  </style>
+</head>
+<body>
+
+<div class="box box1" style="top: 50px; left: 50px;"></div>
+<div class="box box2" style="top: 100px; left: 100px;"></div>
+<div class="box box3" style="top: 150px; left: 150px;"></div>
+
+</body>
+</html>

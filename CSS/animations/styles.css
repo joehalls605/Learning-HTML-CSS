@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out; /* Apply a smooth transition for all properties with a duration of 0.3s */
+}
+
+.transition-card:hover {
+    transform: scale(1.1);
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+@keyframes bounce{
+    0%, 100% {
+        transform: translateY(0); /* Start and end the animation at the normal position (0px vertical offset) */
+    }
+    50%{
+        transform: translateY(-15px)  /* At 50% of the animation, move the element 15px upwards */
+    }
+}
+
+.bounce-card{
+    animation: bounce 1s infinite;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.fade-card{
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay:1s;
+    opacity:0;
+}
+
