@@ -1,0 +1,51 @@
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.container{
+    display:grid;
+    grid-template-columns: 3fr 1fr; /* 1 column 1 is 3 fraction, 2nd column is 1 fraction*/
+    gap:20px;
+    padding:20px;
+}
+.main-content{
+    display:grid;
+    gap:20px;
+}
+.post {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+.sidebar {
+    background: #e0e0ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+
+/* FOOTER */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
