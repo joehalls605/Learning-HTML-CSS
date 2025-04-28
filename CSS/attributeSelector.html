@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute Selectors Example</title>
+  <style>
+    /* Basic styles for all buttons */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Select button with data-action="submit" */
+    button[data-action="submit"] {
+      background-color: green;
+      color: white;
+    }
+
+    /* Select button with data-action="reset" */
+    button[data-action="reset"] {
+      background-color: red;
+      color: white;
+    }
+
+    /* Select button where data-role contains "primary" */
+    button[data-role*="primary"] {
+      font-weight: bold;
+    }
+
+    /* Select button where data-size ends with "small" */
+    button[data-size$="small"] {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+
+    /* Select button where data-id is not equal to "3" */
+    button[data-id!="3"] {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Buttons with different data attributes -->
+<button data-action="submit" data-role="primary" data-size="large" data-id="1">Submit</button>
+<button data-action="reset" data-role="secondary" data-size="small" data-id="2">Reset</button>
+<button data-action="submit" data-role="primary" data-size="small" data-id="3">Submit Small</button>
+<button data-action="reset" data-role="primary" data-size="medium" data-id="4">Reset Medium</button>
+
+</body>
+</html>
