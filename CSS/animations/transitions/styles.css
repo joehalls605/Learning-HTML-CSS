@@ -1,0 +1,46 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    transition-duration: 2s;
+    transition-property: width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container:hover .box {
+    width: 600px;
+}
+
+.one {
+    background: #07BEB8;
+    transition-timing-function: linear; /* Constant speed */
+}
+
+.two {
+    background: #3DCCC7;
+    transition-timing-function: ease-in; /* Starts slow, then speeds up*/
+}
+
+.three {
+    background: #9CEAEF;
+    transition-timing-function: ease-out; /* Starts fast, then slows down */
+}
+
+.four {
+    background: #B1F8F2;
+    transition-timing-function: ease-in-out; /* Start slow, speed up, then slow back down*/
+}
+
+/*
+  transition-delay: 0;
+  transition-duration: 1s;
+  transition-property: background;
+  transition-timing-function: ease;
+*/

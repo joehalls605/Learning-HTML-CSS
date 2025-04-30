@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+}
+.logo {
+    font-size: 24px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.burger.active div:nth-child(1){
+    transform:rotate(45deg);
+    position:relative;
+    top:8px;
+}
+.burger.active div:nth-child(2){
+    opacity:0;
+}
+.burger.active div:nth-child(3){
+    transform: rotate(-45deg);
+    position:relative;
+    top:-8px;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 100vh;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100vw); /* On small screens, this initially slides and hides the nav menu of the screen to the right by 100%*/
+    }
+
+    .nav-links.active {
+        transform: translateX(0); /* When the burger menu is clicked, it slides it back onto screen */
+    }
+}
