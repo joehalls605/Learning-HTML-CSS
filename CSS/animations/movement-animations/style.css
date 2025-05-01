@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    margin: 50px auto;
+    border-radius: 10px;
+
+    /* Transition for hover effect*/
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    /* transform 0.5s ease - if the element moves, scales, rotates do it over 0.5s*/
+
+    /* Animation */
+    animation: bounce 3s ease-in-out infinite;
+}
+
+/* Hover to scale and change colour */
+.box:hover {
+    animation-play-state: paused;
+    transform: translateX(100px) scale(1.2) rotate(90deg); /* Moves the item 100 pixels to the right, then scales 120%*/
+    background-color: tomato;
+}
+
+/* Keyframes for movement */
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
